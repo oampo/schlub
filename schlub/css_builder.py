@@ -11,6 +11,6 @@ class CSSBuilder:
             command = ["lessc", "--include-path=less/include", fileName]
             output = subprocess.check_output(command)
             key = schlub.util.fileNameToKey(fileName)
-            outputFileName = "css/{}.css".format(key)
+            outputFileName = "assets/assets/css/{}.css".format(key)
             schlub.util.writeWithCreate(outputFileName, output.decode("utf-8"))
 
